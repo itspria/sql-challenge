@@ -32,14 +32,14 @@ CREATE  TABLE department (
 
 --Create dept_manager table
 CREATE  TABLE dept_manager ( 
-	dept_no              varchar(10)   ,
-	emp_no               varchar(12)   
+	dept_no              varchar(10)   NOT NULL,
+	emp_no               varchar(12)   NOT NULL
  );
 
 --Create dept_employee table
 CREATE  TABLE dept_emp ( 
-	emp_no               varchar(12)   ,
-	dept_no              varchar(10)   
+	emp_no               varchar(12)   NOT NULL,
+	dept_no              varchar(10)   NOT NULL
  );
 
 --Adding foreign key ref to dept_no in dept_emp table
